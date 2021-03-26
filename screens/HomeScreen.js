@@ -23,7 +23,7 @@ export default function Home({navigation}){
                         <MaterialIcons style={styles.iconCentre} name={'close'} size={26}
                         onPress={()=>modelOpen(false)}>
                         </MaterialIcons>
-                        <Text style={styles.textstyle}>Add Your Review</Text>
+                        <Text style={styles.textstyle}>Submit Your Reviews.</Text>
                         <View style={styles.container}>
 
                         <ReviewInputs/>
