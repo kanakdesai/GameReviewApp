@@ -12,6 +12,11 @@ export default function Home({navigation}){
        {title: 'CS:GO ',body:'this is the body 1', date: '12-03-2200',key: '1',rating:'2'},
        {title: 'Valorant',body:'this is the body 4', date: '22-05-2200',key: '2',rating:'4'},
        {title: 'GTA-V',body:'this is the body 2', date: '21-12-2200',key: '3',rating: '1'},
+       {title: 'PUBG',body:'this is the body 3', date: '21-12-2200',key: '4',rating: '2'},
+       {title: 'Fortnite',body:'this is the body 4', date: '21-12-2200',key: '5',rating: '4'},
+       {title: 'Project Cars',body:'this is the body 5', date: '23-12-2200',key: '6',rating: '2'},
+       {title: 'Forza Horizon',body:'this is the body 6', date: '24-12-2200',key: '7',rating: '4'},
+       {title: 'Assasins Creed',body:'this is the body 7', date: '25-12-2200',key: '8',rating: '2'},
    ]);
     return(
        
