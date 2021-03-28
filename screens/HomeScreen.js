@@ -6,6 +6,7 @@ import Card from '../shared/card';
 import { MaterialIcons } from '@expo/vector-icons';
 import ReviewInputs from './reviewForm';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { LinearGradient } from 'expo-linear-gradient';
 export default function Home({navigation}){
     const [modelState,modelOpen]= useState(false);
    const [reviews, setreviews] = useState([
@@ -17,10 +18,10 @@ export default function Home({navigation}){
    ]);
     return(
        
-        <ImageBackground source={require('../assets/game_bg.png')}style={globalStyles.container}>
         
+        <LinearGradient colors={['#0F2027', '#203A43','#2C5364']} style={globalStyles.container}>
         
-                <Modal visible={modelState} animationType={'slide'}>
+        <Modal visible={modelState} animationType={'slide'}>
                     <SafeAreaView style={styles.modelContent}>
                         <MaterialIcons style={styles.iconCentre} name={'close'} size={26}
                         onPress={()=>modelOpen(false)}>
@@ -44,7 +45,7 @@ export default function Home({navigation}){
 
                           <TouchableOpacity onPress={()=>navigation.navigate('Review', item)}>
                           <Card>
-                            <Text style={globalStyles.textstyle}>{item.title}</Text>
+                            <Text style={styles.textstyle}>{item.title}</Text>
                             </Card>
                         </TouchableOpacity>
                         
@@ -56,17 +57,17 @@ export default function Home({navigation}){
                 <MaterialIcons name={'add'} size={30}
                     onPress={()=>modelOpen(true)}></MaterialIcons>
                 </View>
+                    </LinearGradient>
             
-        </ImageBackground>
     )
 }
 const styles = StyleSheet.create({
     iconCentre:{
         
         alignSelf: 'center',
-        marginBottom: 50,
-        borderWidth: 1,
-        borderColor: '#ffff',
+        marginBottom: 15,
+        borderWidth: 5,
+        borderColor: 'white',
         padding: 10,
         borderRadius: 13,
         backgroundColor: '#3333',
@@ -81,6 +82,7 @@ const styles = StyleSheet.create({
     },
     textstyle:{
         paddingHorizontal: 40,
-        fontSize: 30
+        fontSize: 30,
+        color: 'white'
     }
 })

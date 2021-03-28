@@ -26,10 +26,10 @@ const screens = {
 
 const HomeStack = createStackNavigator(screens,{
     defaultNavigationOptions:{
-        headerTintColor: '#4444',
+      //  headerTintColor: '#4444',
         headerStyle: {
             backgroundColor: '#eee',
-            height: 100,
+            
             
         }
     }
