@@ -5,7 +5,8 @@ import {View,Text,StyleSheet} from 'react-native';
 
 export default function Card(props){
     return(
-        <LinearGradient colors={['#8E2DE2', '#4A00E0']} style={styles.background}>
+        <LinearGradient colors={['#ee0979','#ff6a00']} start={{ x: 0, y: 1 }}
+        end={{ x: 1, y: 1 }} style={styles.background}>
             <View style={styles.cardcontent}>
                 { props.children }
             </View>

@@ -19,7 +19,8 @@ export default function Home({navigation}){
     return(
        
         
-        <LinearGradient colors={['#0F2027', '#203A43','#2C5364']} style={globalStyles.container}>
+        <LinearGradient colors={['#0F2027', '#203A43','#2C5364']} start={{ x: 0, y: 1 }}
+        end={{ x: 1, y: 1 }} style={globalStyles.container}>
         
         <Modal visible={modelState} animationType={'slide'}>
                     <SafeAreaView style={styles.modelContent}>
