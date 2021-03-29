@@ -2,6 +2,7 @@ import React from 'react';
 import { Feather } from '@expo/vector-icons';
 import { View,StyleSheet,Text,Image, ImageBackground, SafeAreaView} from "react-native";
 import { HeaderTitle } from 'react-navigation-stack';
+
 export default function Header({navigation,HeaderTitle}){
     const openMenu = ()=>{
             navigation.openDrawer()
@@ -9,7 +10,8 @@ export default function Header({navigation,HeaderTitle}){
 
     return(
        
-
+        
+        
         <View source={require('../assets/game_bg.png')} style={styles.headerStyle}>
         <Feather name={'list'} size={28} style={styles.icon} onPress={openMenu}/>
             <View style={styles.InsideHeader}>
@@ -19,17 +21,17 @@ export default function Header({navigation,HeaderTitle}){
         </View>
         
         
+        
     )
 }
 const styles = StyleSheet.create({
     
-    bkgImg:{
-        width: '100%',
-        height: '100%'
-    },
+   
     headerStyle:{
+        //backgroundColor:'blue',
         width: '100%',
         height: '100%',
+        
         flexDirection: 'row',
         alignContent: 'center',
         justifyContent: "center",
@@ -43,8 +45,9 @@ const styles = StyleSheet.create({
         
     },
     icon:{
-        position:'absolute',
-        left: -40,
+        
+        left: -40
+        //backgroundColor:'blue'
         
         
     },
@@ -58,5 +61,8 @@ const styles = StyleSheet.create({
         height: 26,
         marginHorizontal: 10,
         
+    },
+    header:{
+        //backgroundColor:'red'
     }
 })

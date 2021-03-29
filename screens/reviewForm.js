@@ -9,7 +9,7 @@ export default function ReviewInputs(){
        
         <View >
             <Formik
-                initialValues={{title:' ', body:' ', date:' ',rating:' '}}
+                initialValues={{title:'', body:'', date:'',rating:''}}
                 onSubmit={(values)=>{console.log(values)}}
             >
                 {(props)=>(

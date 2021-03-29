@@ -7,6 +7,7 @@ import Navigator from './rts/drawer';
 
 
 const getFonts=()=>Font.loadAsync({
+  'FjallaOne-Regular': require('./assets/fonts/FjallaOne-Regular.ttf'),
   'ubuntu-bold': require('./assets/fonts/Ubuntu-Bold.ttf'),
   'ubuntu-regular': require('./assets/fonts/Ubuntu-Medium.ttf')
 });
