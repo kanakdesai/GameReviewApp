@@ -24,10 +24,14 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 5,
         fontSize: 20,
         marginVertical: 10,
+        backgroundColor: 'white'
+        },
+        errorstyle:{
+          color: 'crimson',
+          fontWeight: 'bold',
+           textAlign: 'center'
+        }
         
-        
-        
-      }
 });
 export const images = {
   ratings:{
